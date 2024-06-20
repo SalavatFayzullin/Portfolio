@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salavat</title>
+    <title>Jokes & Co</title>
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
@@ -47,17 +47,31 @@
         </div>
         <div class="twitter-card" style="border-color: orange; background-color: orange;">
             <a href="https://www.google.com/intl/ru/gmail/about/">
-                <img src="gmail.jpeg" alt="Gmail Image"> <!-- Замените на URL вашего изображения -->
+                <img src="gmail.jpeg" alt="Gmail Image">
                 <p>Go to Gmail</p>
             </a>
         </div>
         <div class="twitter-card" style="border-color: black; background-color: black; color: wheat;">
             <a href="https://github.com/SalavatFayzullin" style="color: wheat;">
-                <img src="github.png" alt="Twitter Image"> <!-- Замените на URL вашего изображения -->
+                <img src="github.png" alt="Twitter Image">
                 <p>Go to GitHub</p>
             </a>
         </div>
     </div>
-    
+    <script src="fetcher.js"></script>
+    <div id="joke-input">
+        <h1>Do you want a joke?</h1>
+        <form>
+            <input type="text" placeholder="Input your email" id="email">
+            <button onclick="fetch_joke()" type="button">Get a joke!</button>
+        </form>
+    </div>
+
+    <h1>Joke</h1>
+    <div id="hw2">
+        <div id="joke-container">
+            
+        </div>
+    </div>
 </body>
 </html>

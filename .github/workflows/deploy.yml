@@ -16,3 +16,6 @@ jobs:
       
       - name: Build with Rollup
         run: npm run build
+      - name: Deploy artifact
+        id: deployment
+        uses: actions/deploy-pages@v1

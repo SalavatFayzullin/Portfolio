@@ -1,8 +1,7 @@
 'use strict'
 
-import React, { useState } from 'react';
+import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { differenceInCalendarDays } from 'date-fns';
 import { FlexContainer } from './FlexContainer';
 import { ProjectItem } from './ProjectItem';
 import { LinkElement } from './LinkElement';

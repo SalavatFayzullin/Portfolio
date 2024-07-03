@@ -1,5 +1,4 @@
-import React from "react"
-import { ReactElement } from "react"
+import React, { ReactElement } from "react"
 
 interface FlexContainerProps {
     children: ReactElement[]

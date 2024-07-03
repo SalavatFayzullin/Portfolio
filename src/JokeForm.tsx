@@ -37,7 +37,7 @@ export const JokeForm = () => {
           setShowComic(true)
           setShowError(false)
         })
-        .catch(e => {
+        .catch(() => {
           setShowComic(false)
           setShowError(true)
         })

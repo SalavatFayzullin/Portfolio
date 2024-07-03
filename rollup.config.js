@@ -1,17 +1,35 @@
-import { nodeResolve } from '@rollup/plugin-node-resolve';
+import resolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
+import babel from '@rollup/plugin-babel';
+import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import terser from '@rollup/plugin-terser';
-import typescript from '@rollup/plugin-typescript';
-import commonJs from '@rollup/plugin-commonjs'
+import typescript from 'rollup-plugin-typescript2';
+import replace from '@rollup/plugin-replace';
 
 export default {
-    input: 'src/fetcher.ts',
-    output: {
-        file: 'dist/bundle.js',
-    },
-    plugins: [
-        commonJs(),
-        nodeResolve({ browser: true }),
-        terser(),
-        typescript()
-    ],
+  input: 'src/App.tsx',
+  output: [
+    {
+      file: 'dist/bundle.js',
+      format: 'cjs',
+      preserveModulesRoot: 'src'
+    }
+  ],
+  plugins: [
+    peerDepsExternal(),
+    resolve(),
+    commonjs(),
+    babel({
+      exclude: 'node_modules/**',
+      runtimeHelpers: true
+    }),
+    typescript(),
+    replace({
+        preventAssignment: true,
+        values: {
+          'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
+        }
+      }),
+    terser() // Minifies the code
+  ]
 };

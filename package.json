@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "fetcher.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint src/*.tsx",
+    "dev": "next dev",
+    "lint": "eslint app/**.tsx",
     "build": "rollup --config rollup.config.js",
     "check": "tsc --noEmit"
   },
@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "date-fns": "^3.6.0",
-    "moment": "^2.30.1"
+    "moment": "^2.30.1",
+    "next": "^14.2.4"
   }
 }

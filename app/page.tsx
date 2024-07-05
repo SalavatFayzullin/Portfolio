@@ -8,9 +8,6 @@ import { LinkElement } from './LinkElement';
 import { BorderedParagraph } from './BorderedParagraph';
 import { Title } from './Title';
 import { JokeForm } from './JokeForm';
-import githubImage from '../public/img/github.png'
-import tgImage from '../public/img/tg.jpeg'
-import gmailImage from '../public/img/gmail.jpeg'
 import Link from 'next/link';
 import { Footer } from './Footer';
 
@@ -44,15 +41,15 @@ export default function App() {
   My overall GPA is 4,79. Here is the list of my projects and link to them on Github!" />
       <Title text={"Projects:"} />
       <FlexContainer>
-        <ProjectItem href="https://github.com/SalavatFayzullin/BiLang" src={githubImage} alt="GitHub Logo 1" name="BiLang" desc="Minecraft plugin for easy localization" />
-        <ProjectItem href="https://github.com/SalavatFayzullin/SkyWarsUp" src={githubImage} alt="GitHub Logo 1" name="SkyWarsUp" desc="High-customizable SkyWars plugin with PlaceholderAPI and Vault hooks for Paper" />
-        <ProjectItem href="https://github.com/SalavatFayzullin/SkyWarsUp" src={githubImage} alt="GitHub Logo 1" name="SpaceDefense" desc="My first Unity game" />
+        <ProjectItem href="https://github.com/SalavatFayzullin/BiLang" src={'/img/github.png'} alt="GitHub Logo 1" name="BiLang" desc="Minecraft plugin for easy localization" />
+        <ProjectItem href="https://github.com/SalavatFayzullin/SkyWarsUp" src={'/img/github.png'} alt="GitHub Logo 1" name="SkyWarsUp" desc="High-customizable SkyWars plugin with PlaceholderAPI and Vault hooks for Paper" />
+        <ProjectItem href="https://github.com/SalavatFayzullin/SkyWarsUp" src={'/img/github.png'} alt="GitHub Logo 1" name="SpaceDefense" desc="My first Unity game" />
       </FlexContainer>
       <Title text={"Social media:"} />
       <FlexContainer>
-        <LinkElement borderStyle={{ backgroundColor: 'rgb(92, 164, 236)' }} href="https://t.me/IFFJEAHONGHE" src={tgImage} alt="Telegram Image" text="Go to Telegram" />
-        <LinkElement borderStyle={{ backgroundColor: 'orange' }} href="https://www.google.com/intl/ru/gmail/about/" src={gmailImage} alt="Gmail Image" text="Go to Gmail" />
-        <LinkElement borderStyle={{ backgroundColor: 'black' }} href="https://github.com/SalavatFayzullin" src={githubImage} alt="GitHub Image" text="Go to GitHub" />
+        <LinkElement borderStyle={{ backgroundColor: 'rgb(92, 164, 236)' }} href="https://t.me/IFFJEAHONGHE" src={'/img/tg.jpeg'} alt="Telegram Image" text="Go to Telegram" />
+        <LinkElement borderStyle={{ backgroundColor: 'orange' }} href="https://www.google.com/intl/ru/gmail/about/" src={'/img/gmail.jpeg'} alt="Gmail Image" text="Go to Gmail" />
+        <LinkElement borderStyle={{ backgroundColor: 'black' }} href="https://github.com/SalavatFayzullin" src={'/img/github.png'} alt="GitHub Image" text="Go to GitHub" />
       </FlexContainer>
       <Footer />
     </div>

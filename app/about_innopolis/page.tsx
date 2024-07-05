@@ -2,7 +2,6 @@ import React from 'react';
 import { Header } from '../page';
 import Image from 'next/image';
 import { BorderedParagraph } from '../BorderedParagraph';
-import innopolisUniversity from '../../public/img/universitet-innopolis.jpeg'
 import { Title } from '../Title';
 import { Footer } from '../Footer';
 
@@ -10,7 +9,7 @@ export default function AboutInnopolis() {
     return <>
         <Header></Header>
         <Title text={"Who are you... Innopolis?"} />
-        <ImageText src={innopolisUniversity}>Innopolis University is a Russian autonomous non—profit organization of higher education in the city of Innopolis (Verkhneuslonsky district, Republic of Tatarstan) specializing in education, research and development in the field of information technology and robotics.
+        <ImageText src={'/img/universitet-innopolis.jpeg'}>Innopolis University is a Russian autonomous non—profit organization of higher education in the city of Innopolis (Verkhneuslonsky district, Republic of Tatarstan) specializing in education, research and development in the field of information technology and robotics.
 
             Initially, the university operated in the city of Kazan, and since September 2015, the university's campus has been opened in Innopolis. Innopolis University trains developers and managers in the field of high technologies and conducts scientific research in the fields of information technology and robotics.
 

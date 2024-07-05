@@ -1,8 +1,6 @@
 import { ImageText } from "../about_innopolis/page";
 import { Header } from "../page";
 import { Title } from "../Title";
-import why1 from '../../public/img/why1.png'
-import why2 from '../../public/img/why2.png'
 import React from "react";
 import { Footer } from "../Footer";
 
@@ -10,9 +8,9 @@ export default function AboutInnopolis() {
     return <>
         <Header></Header>
         <Title text={"Unique Focus on Innovation and Technology"} />
-        <ImageText src={why1}>Innopolis University is uniquely positioned within Russia's innovation ecosystem, focusing on technology and innovation. This specialization can provide you with advanced knowledge and practical skills in cutting-edge technologies, preparing you for careers in rapidly evolving industries.</ImageText>
+        <ImageText src={'/img/why1.png'}>Innopolis University is uniquely positioned within Russia's innovation ecosystem, focusing on technology and innovation. This specialization can provide you with advanced knowledge and practical skills in cutting-edge technologies, preparing you for careers in rapidly evolving industries.</ImageText>
         <Title text={"International Recognition and Partnerships"} />
-        <ImageText src={why2}>Innopolis University collaborates with leading international universities and tech companies, offering exchange programs, joint degrees, and internships. This global network can enhance your educational experience, exposing you to diverse perspectives and opportunities.</ImageText>
+        <ImageText src={'/img/why2.png'}>Innopolis University collaborates with leading international universities and tech companies, offering exchange programs, joint degrees, and internships. This global network can enhance your educational experience, exposing you to diverse perspectives and opportunities.</ImageText>
         <Footer />
     </>
 }

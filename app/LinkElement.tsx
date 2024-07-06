@@ -16,7 +16,7 @@ interface LinkElementProps {
 export const LinkElement = (props: LinkElementProps) => (
     <div className="twitter-card" style={props.borderStyle}>
         <a href={props.href}>
-            <Image src={props.src} alt={props.alt} width={100} height={100}/>
+            <Image unoptimized src={props.src} alt={props.alt} width={100} height={100}/>
             <p>{props.text}</p>
         </a>
     </div>

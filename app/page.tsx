@@ -10,6 +10,7 @@ import { Title } from './Title';
 import { JokeForm } from './JokeForm';
 import Link from 'next/link';
 import { Footer } from './Footer';
+import { Header } from './Header';
 
 
 export interface ComicsData {
@@ -58,22 +59,3 @@ export default function App() {
 
 
 
-export const Header = () => (
-  <>
-    <ul className='header'>
-      <li className='header_item'>
-        <Link href='/'>About me</Link>
-      </li>
-      <li className='header_item'>
-        <Link href='/about_innopolis'>About Innopolis</Link>
-      </li>
-      <li className='header_item'>
-        <Link href='/inno_preparation'>How to prepare to studying in Innopolis</Link>
-      </li>
-      <li className='header_item'>
-      <Link href='/why_innopolis'>Why do you need to choose Innopolis?</Link>
-        
-      </li>
-    </ul>
-  </>
-)

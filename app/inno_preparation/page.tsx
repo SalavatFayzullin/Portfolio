@@ -1,5 +1,5 @@
 import { ImageText } from "../ImageText";
-import { Header } from "../page";
+import { Header } from "../Header";
 import { Title } from "../Title";
 import React from "react";
 import { Footer } from "../Footer";

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header } from '../page';
+import { Header } from '../Header';
 import { Title } from '../Title';
 import { Footer } from '../Footer';
 import { ImageText } from '../ImageText';

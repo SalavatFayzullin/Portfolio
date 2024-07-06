@@ -47,9 +47,9 @@ export default function App() {
       </FlexContainer>
       <Title text={"Social media:"} />
       <FlexContainer>
-        <LinkElement borderStyle={{ backgroundColor: 'rgb(92, 164, 236)' }} href="https://t.me/IFFJEAHONGHE" src={'/img/tg.jpeg'} alt="Telegram Image" text="Go to Telegram" />
-        <LinkElement borderStyle={{ backgroundColor: 'orange' }} href="https://www.google.com/intl/ru/gmail/about/" src={'/img/gmail.jpeg'} alt="Gmail Image" text="Go to Gmail" />
-        <LinkElement borderStyle={{ backgroundColor: 'black' }} href="https://github.com/SalavatFayzullin" src={'/img/github.png'} alt="GitHub Image" text="Go to GitHub" />
+        <LinkElement borderStyle={{ backgroundColor: 'rgb(92, 164, 236)' }} href="https://t.me/IFFJEAHONGHE" src={'/public/img/tg.jpeg'} alt="Telegram Image" text="Go to Telegram" />
+        <LinkElement borderStyle={{ backgroundColor: 'orange' }} href="https://www.google.com/intl/ru/gmail/about/" src={'/public/img/gmail.jpeg'} alt="Gmail Image" text="Go to Gmail" />
+        <LinkElement borderStyle={{ backgroundColor: 'black' }} href="https://github.com/SalavatFayzullin" src={'/public/img/github.png'} alt="GitHub Image" text="Go to GitHub" />
       </FlexContainer>
       <Footer />
     </div>

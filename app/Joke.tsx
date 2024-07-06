@@ -18,6 +18,7 @@ export const Joke = (props: JokeProps) => (
       <h2>{props.date}</h2>
       <div id="joke-container">
         <img src={props.src} alt={props.alt} />
+        
       </div>
     </div>
   )

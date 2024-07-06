@@ -7,7 +7,7 @@
     "lint": "eslint app/**.tsx",
     "build": "next build",
     "export": "next export",
-    "check": "tsc --noEmit",
+    "check": "tsc --noEmit"
   },
   "author": "",
   "license": "ISC",

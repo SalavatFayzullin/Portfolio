@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { BorderedParagraph } from '../BorderedParagraph';
 import { Title } from '../Title';
 import { Footer } from '../Footer';
+import { ImageText } from '../ImageText';
 
 export default function AboutInnopolis() {
     return <>
@@ -18,9 +19,3 @@ export default function AboutInnopolis() {
     </>
 }
 
-export const ImageText = (props: any) => {
-    return <div className='fifty-fifty'>
-        <Image style={{ alignSelf: 'stretch' }} src={props.src} alt='Gmail' className='fifty-fifty-element' width={500} height={400} />
-        <BorderedParagraph text={props.children}></BorderedParagraph>
-    </div>
-}

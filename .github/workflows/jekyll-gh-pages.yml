@@ -27,6 +27,10 @@ jobs:
       - name: Build and export Next.js application
         run: |
           npm run build
+      - name: Lint
+        run: npm run lint
+      - name: Check
+        run: npm run check
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4

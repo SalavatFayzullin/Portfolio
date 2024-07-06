@@ -1,5 +1,6 @@
 import React from "react"
 import { Title } from "./Title"
+import Image from "next/image"
 
 interface JokeProps {
   title: string | undefined,
@@ -16,8 +17,7 @@ export const Joke = (props: JokeProps) => (
     <h2>{props.daysAgo}</h2>
     <h2>{props.date}</h2>
     <div id="joke-container">
-      <img src={props.src} alt={props.alt} />
-
+      <Image src={props.src} alt={props.alt} fill={true}/>
     </div>
   </div>
 )

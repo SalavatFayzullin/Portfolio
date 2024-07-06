@@ -41,9 +41,9 @@ export default function App() {
   My overall GPA is 4,79. Here is the list of my projects and link to them on Github!" />
       <Title text={"Projects:"} />
       <FlexContainer>
-        <ProjectItem href="https://github.com/SalavatFayzullin/BiLang" src={'/img/github.png'} alt="GitHub Logo 1" name="BiLang" desc="Minecraft plugin for easy localization" />
-        <ProjectItem href="https://github.com/SalavatFayzullin/SkyWarsUp" src={'/img/github.png'} alt="GitHub Logo 1" name="SkyWarsUp" desc="High-customizable SkyWars plugin with PlaceholderAPI and Vault hooks for Paper" />
-        <ProjectItem href="https://github.com/SalavatFayzullin/SkyWarsUp" src={'/img/github.png'} alt="GitHub Logo 1" name="SpaceDefense" desc="My first Unity game" />
+        <ProjectItem href="https://github.com/SalavatFayzullin/BiLang" src={'/public/img/github.png'} alt="GitHub Logo 1" name="BiLang" desc="Minecraft plugin for easy localization" />
+        <ProjectItem href="https://github.com/SalavatFayzullin/SkyWarsUp" src={'/public/img/github.png'} alt="GitHub Logo 1" name="SkyWarsUp" desc="High-customizable SkyWars plugin with PlaceholderAPI and Vault hooks for Paper" />
+        <ProjectItem href="https://github.com/SalavatFayzullin/SkyWarsUp" src={'/public/img/github.png'} alt="GitHub Logo 1" name="SpaceDefense" desc="My first Unity game" />
       </FlexContainer>
       <Title text={"Social media:"} />
       <FlexContainer>

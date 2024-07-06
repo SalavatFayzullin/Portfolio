@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "lint": "eslint app/**.tsx",
-    "build": "rollup --config rollup.config.js",
+    "build": "next build",
     "export": "next export",
     "check": "tsc --noEmit"
   },

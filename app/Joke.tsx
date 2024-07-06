@@ -1,12 +1,13 @@
 import React from "react"
 import { Title } from "./Title"
+import Image from "next/image"
 
 interface JokeProps {
     title: string | undefined,
     daysAgo: string | undefined,
     date: string | undefined,
-    src: string | undefined,
-    alt: string | undefined
+    src: string,
+    alt: string
   }
   
 export const Joke = (props: JokeProps) => (
@@ -16,7 +17,7 @@ export const Joke = (props: JokeProps) => (
       <h2>{props.daysAgo}</h2>
       <h2>{props.date}</h2>
       <div id="joke-container">
-        <img src={props.src} alt={props.alt} />
+        <Image src={props.src} alt={props.alt} />
       </div>
     </div>
   )

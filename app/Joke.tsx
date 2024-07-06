@@ -17,7 +17,7 @@ export const Joke = (props: JokeProps) => (
       <h2>{props.daysAgo}</h2>
       <h2>{props.date}</h2>
       <div id="joke-container">
-        <Image src={props.src} alt={props.alt} />
+        <img src={props.src} alt={props.alt} />
       </div>
     </div>
   )

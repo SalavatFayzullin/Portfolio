@@ -8,7 +8,6 @@ import { LinkElement } from './LinkElement';
 import { BorderedParagraph } from './BorderedParagraph';
 import { Title } from './Title';
 import { JokeForm } from './JokeForm';
-import Link from 'next/link';
 import { Footer } from './Footer';
 import { Header } from './Header';
 

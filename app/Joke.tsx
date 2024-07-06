@@ -1,6 +1,5 @@
 import React from "react"
 import { Title } from "./Title"
-import Image from "next/image"
 
 interface JokeProps {
   title: string | undefined,

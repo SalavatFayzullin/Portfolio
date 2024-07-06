@@ -11,8 +11,8 @@ export const JokeForm = () => {
     const [title, setTitle] = useState<string | undefined>(undefined);
     const [daysAgo, setDaysAgo] = useState<string | undefined>(undefined);
     const [date, setDate] = useState<string | undefined>(undefined);
-    const [src, setSrc] = useState<string | undefined>(undefined);
-    const [alt, setAlt] = useState<string | undefined>(undefined);
+    const [src, setSrc] = useState<string>('undefined');
+    const [alt, setAlt] = useState<string>('undefined');
     const clickFunction = () => {
       console.log(email)
       fetch('https://fwd.innopolis.university/api/hw2?email=' + email)

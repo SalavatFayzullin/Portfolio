@@ -1,7 +1,5 @@
 import React from 'react';
 import { Header } from '../page';
-import Image from 'next/image';
-import { BorderedParagraph } from '../BorderedParagraph';
 import { Title } from '../Title';
 import { Footer } from '../Footer';
 import { ImageText } from '../ImageText';

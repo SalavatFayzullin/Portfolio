@@ -1,4 +1,4 @@
-import { ImageText } from "../about_innopolis/page";
+import { ImageText } from "../ImageText";
 import { Header } from "../page";
 import { Title } from "../Title";
 import React from "react";
